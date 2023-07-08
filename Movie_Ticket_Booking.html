@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="text-align:center;;"><b>MOVIE TICKET BOOKING SYSTEM</b></h1>
+    <br>
+    <br>
+    <form>       
+        <label for="name"> <b>Customer Name:*</b> </label>
+        <input type="text" id="name" required style="background-color: aliceblue;">
+        <br>
+        <br>
+        <br>
+        <label for="mobile"><b>Mobile No:*</b></label>
+        <input type="date" required required style="background-color: aliceblue;">
+        <br>
+        <br>
+        <br><label for="phone"> <b>Phone No:*</b></label>
+        <input type="tel" required required style="background-color: aliceblue;">
+        <br>
+        <br>
+        <br>
+        <label for="mail"> <b>E-mail:</b> </label>
+        <input type="email" style="background-color: aliceblue;">
+        <br>
+        <br>
+        <br>
+        <label for="movie"><b>Select Movie:*</b></label>
+     <select required style="background-color: aliceblue;">
+        <option >M3</option>
+        <option >M2</option>
+        <option selected>M1</option>
+     </select>
+      <br>
+      <br>
+      <br>
+      <label for="num_tic"><b>No. of Tickets:</b></label>
+      <input type="number"  name="num" style="background-color: aliceblue;">
+     <datalist id="num" required style="background-color: aliceblue;">
+         <option  selected>1</option>
+         <option>2</option>
+         <option >3</option>
+         <option >4</option>
+         <option >5</option>
+         <option >6</option>
+     </datalist>
+         <br>
+         <br>
+         <br>
+         <label for="Screening"><b>Screening Details:*</b></label>
+         <input type="datetime-local" required style="background-color: aliceblue;">
+         <br>
+        <br>
+         <br>
+        <label for="pay"><b>Payment Mode:*</b></label>
+     <select required style="background-color: aliceblue;">
+        <option selected>UPI</option>
+        <option >Credit Card</option>
+        <option>Debit Card</option>
+     </select>
+     <br>
+     <br>
+     <br>
+     <br>
+     <button>Proceed for Payment</button>
+    </form>
+</body>
+</html>
