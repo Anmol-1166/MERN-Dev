@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+<body>
+    <label for="cars">Choose a car</label>
+    <select>
+        <option value="Ferrari">Ferrari</option>
+        <option value="Safari">Safari</option>
+        <option value="audi" selected>Audi</option>
+    </select>
+    <br>
+    <hr>
+    <br>
+    <label for="cars">Choose a car</label>
+    <input type="text" list="cars" name="cars">
+    <datalist id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="Ferrari" selected>Ferrari</option>
+        <option value="Audi">Audi</option>
+    </datalist>
+
+</body>
+</html>
