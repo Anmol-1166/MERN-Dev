@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <style>
+        p{
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+            background-color: aquamarine;
+            font-style: italic;
+        }
+        .mytag{
+            font-size: 30px;
+            color: pink;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #myid{
+            color: green;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 70;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="mytag" style="color: brown; font-family: 'Times New Roman', Times, serif;">
+        Inline CSS is used to design individual tags.</h1>
+        <p class="mytag">Internal CSS is used to style whole page.</p>
+        <p id="myid">Internal CSS is used to style whole page.</p>
+        <p class="mytag" id="myid">PRIORITY: ID Selector > class selector.</p>
+</body>
+</html>
