@@ -10,13 +10,24 @@
             width: 100%;
             border: 2px solid black;
             display: flex;
-            /*flex-direction: row;
+            flex-wrap: wrap;
+            /*
+            
+            flex-direction: row;
             flex-wrap: wrap-reverse;
             flex-flow: row;*/
+            /*
+            for horizontal
             justify-content: center;
             justify-content: space-between;
             justify-content: space-evenly;
             justify-content: space-around;
+            
+            align items for vertical*/
+            align-items: center;
+            align-items: flex-start;
+            align-items: flex-end;
+            /* align-items: stretch;*/
         }
         .item{
             width: 120px;
@@ -27,7 +38,16 @@
             padding: 4px;
             box-shadow: 2px 2px 2px black;
         }
-
+        #item1{
+            flex-shrink: 2;
+            /* order: 2; */
+            /* flex-grow: 2; */
+        }
+        #item2{
+            /* order: 3; */
+            /* flex-grow: 5; */
+            flex-shrink: 3;
+        }
     </style>
 </head>
 <body>
@@ -36,11 +56,12 @@
     </h1>
     <div class="container">
         <div class="item" id="item1">Box 1</div>
-        <div class="item" id="item1">Box 2</div>
-        <div class="item" id="item1">Box 3</div>
-        <div class="item" id="item1">Box 4</div>
-        <div class="item" id="item1">Box 5</div>
-        <div class="item" id="item1">Box 6</div>
+        <div class="item" id="item2">Box 2</div>
+        <div class="item" id="item3">Box 3</div>
+        <!-- <div class="item" id="item1">Box 4</div> -->
+        <!-- <div class="item" id="item1">Box 5</div> -->
+        <!-- <div class="item" id="item1">Box 6</div> -->
+        
     </div>
 </body>
 </html>
