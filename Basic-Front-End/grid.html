@@ -21,6 +21,7 @@
             padding: 20px;
             background-color: var(--theme-background);
             /* color: var(--theme-text) ; */
+            animation: myanime 2s linear infinite;
         }
 
         .container{
@@ -48,8 +49,16 @@
             height: 100px;
         }
 
-        @keyframes identifier {
-            
+        @keyframes myanime {
+            0%{
+                transform: translateY(-50px);
+            }
+            50%{
+                transform: translateY(50px);
+            }
+            100%{
+                transform: translateY(-50px);
+            }
         }
 
     </style>
